@@ -25,7 +25,7 @@ import (
 	"os"
 )
 
-func copy(src, dst string, BUFFERSIZE int64) error {
+func Copy(src, dst string, BUFFERSIZE int64) error {
 	sourceFileStat, err := os.Stat(src)
 	if err != nil {
 		return err
